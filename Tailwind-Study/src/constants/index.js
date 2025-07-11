@@ -34,7 +34,7 @@ import {
   telegram,
   twitter,
   yourlogo,
-} from "../../public/assets";
+} from "../assets";
 
 export const navigation = [
   {
@@ -63,12 +63,7 @@ export const navigation = [
     url: "#signup",
     onlyMobile: true,
   },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+  
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonSvg from '../assets/svg/ButtonSvg';
+import ButtonGradient from "../assets/svg/ButtonGradient"
 const Button = ({className,href,onClick,children,px,white}) => {
   const classes= `button relative infline-flex items-center justify-center h-11   ${px||'px-7'}${white?'text-n-8':'text-n-1'} ${className||''}`;
   
@@ -9,6 +10,7 @@ const Button = ({className,href,onClick,children,px,white}) => {
       <button className={classes}>
         <span className={spanClasses}>{children}</span>
         {ButtonSvg(white)}
+        <ButtonGradient/>
       </button>
   )
   const renderLink=()=>(
